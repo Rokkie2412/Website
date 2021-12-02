@@ -1,0 +1,166 @@
+
+*{
+  padding: 0;
+  margin : 0;
+}
+
+body{
+}
+
+#header{
+  height: 120px;
+  width: 100%;
+  position: fixed;
+  background: #56c7d1;
+  transition: all 0.4s;
+  padding-bottom: 20px;
+}
+
+#header h1{
+  float: left;
+  padding-top: 35px;
+  padding-left: 100px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+
+}
+
+
+
+.drop{
+  float: right;
+}
+
+.main{
+  width: 100%;
+}
+.isi{
+  width: 60%;
+  margin: auto;
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+
+div p {
+  font-family: sans-serif;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+#header a{
+  display: block;
+  padding: 35px;
+  padding-top: 55px;
+  padding-right: 78px;
+  color: white;
+  text-decoration: none;
+  font-size: 21px;
+  font-family: sans-serif;
+
+}
+#header a:hover{
+  color : whitesmoke;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.bot{
+  width: 100%px;
+  height: 250px;
+  background-color : #56c7d1;
+}
+
+.footer{
+	text-align: center;
+	background-color: #56c7d1;
+	margin-top: 20px;
+  width: 100%;
+  font-style: Arial;
+}
+
+.botnav{
+	background-color: #56c7d1;
+}
+
+.botnav a{
+
+	text-decoration: none;
+	padding-right: 10px;
+	color: white;
+}
+
+
+.drop ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.drop > ul > li {
+  float: left;
+}
+
+
+.drop li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.drop li a:hover{
+  background-color: #56c7d1;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown:hover .isi-dropdown {
+  display: block;
+  background-color: #bdb9b9;
+}
+
+.isi-dropdown a:hover {
+  color: #fff ;
+}
+
+.isi-dropdown {
+  position: absolute;
+  display: none;
+
+}
+
+
+
+.card {
+  width: 30%;
+  padding: 20px;
+  color: #333;
+  margin: auto;
+}
+
+.main{
+  height: 1000px;
+}
+
+.web {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.web{
+  font-size: 50px;
+}
+
+.web .letter {
+  display: inline-block;
+  line-height: 1em;
+}

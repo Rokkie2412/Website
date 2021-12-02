@@ -1,0 +1,70 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	animation: Back 16s linear infinite; 
+}
+
+.ecplise{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-500%);
+	width: 150px;
+	height: 150px;
+}
+
+.ecplise .sun{
+	position: absolute;
+	width: 100%
+	height: 100%;
+	background:#ffad00;
+	border-radius: 50%;
+	box-shadow: 0px 0px 50px 4px #ffad00px;
+	animation: sun 16s ease-in-out infinite;
+}
+
+.ecplise .moon{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 140px;
+	height: 140px;
+	background: #fff;
+	border-radius: 50%;
+	margin : -73px;
+	animation: movemoon 16s linear infinite;
+}
+
+@keyframe movemoon{
+	0%{
+		transform: translateX(200px);
+		background: #fff;
+	}
+	50%{
+		transform: translateX(0px);
+		background: #000;
+	}
+	100%{
+		transform: translateX(-200px);
+		background: #fff;
+	}
+};
+
+@keyframe Back{
+	0%,100%{
+		background: #fff;
+	}
+	50%{
+		background: #000;
+	}
+};
+
+@keyframe sun{
+	50%{
+		box-shadow: 0px 0px 20px 4px #ffad00;
+	}
+};

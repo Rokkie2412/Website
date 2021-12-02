@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+html {
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+
+*{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	background:whitesmoke ;
+	color: #505978;
+}
+
+ul li a{
+	display: block;
+	color: #505978;
+}
+
+.navbar{
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	background: #7ddf96;
+	border-radius: 3px;
+	border-radius: 25px;
+}
+
+
+ul.menu, ul.social_items{
+	display: flex;
+}
+
+.navbar ul.menu a{
+	margin: 0 5px;
+	width: 120px;
+	padding: 12px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+.navbar .logo{
+	font-weight: 700;
+	font-size: 24px;
+	letter-spacing: 2px;
+	padding-left: 5px;
+}
+
+.navbar .logo span{
+	color: blanchedalmond;
+}
+
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar ul.menu a{
+	border-radius: 25px;
+}
+
+.navbar ul.menu a:hover,
+.navbar ul.menu a.active{
+	background: #505978;
+	color: #fff;
+}
+
+.navbar ul.social_items a{
+	margin: 0 5px;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	border-radius: 25px;
+	transition: all 0.2 ease;
+}
+
+.navbar ul.social_items a:hover{
+	background: #505978;
+	color: #fff;
+}
+
+.photosection{
+	display: inline-block;
+	width: 100%;
+	margin-top: 20px;
+	justify-content: safe center;
+	display: none;
+}
+
+.photosection img{
+	padding-top: 30px;
+	padding-right: 10px;
+	border-radius: 50%;
+	float: right;
+}
+
+.medium{
+	width: 100%;
+	height: 900px;
+	display: table;
+	transition:0.6s;
+}
+
+.med-left{
+	float: left;
+	width: 20%;
+	height: 900px;
+	background: white;
+	transition:0.6s;
+}
+
+.med-right{
+	float: right;
+	padding-left: 30px;
+	width: 80%;
+	height: 900px;
+	background: white;
+	transition:0.6s;
+}
+
+.med-right .text-section{
+	padding-top: 40px;
+	line-height: 30px;
+	margin-top: 40px;
+	letter-spacing: 1px;
+	margin-left: 10px;
+	width: 600px;
+}
+
+.med-right .text-section h1{
+	font-weight: 700;
+	letter-spacing: 2px;
+	padding-left: 5px;
+}
+
+.medium:hover .photosection{
+	display: inline-block;
+}
+
+.medium:hover .med-right{
+	width: 50%;
+}
+
+.medium:hover .med-left{
+	width: 50%;
+}
+.profile{
+	width: 100%;
+	height: 700px;
+	display: table;
+	margin: auto;
+	max-height: 600px;
+}
+
+.profile-left{
+	display: block;
+	float: left;
+	width: 50%;
+	height: 700px;
+	text-align: center;
+	transition: 0.5s;
+}
+
+table{
+	width: 100%;
+	font-size: 20px;
+	margin-left: 25%;
+	line-height: 40px;
+}
+
+table th{
+	padding: 2px 15px 2px 15px;
+	text-align: left	;
+	font-size: 30px;
+}
+
+table td{
+	padding: 2px 15px 2px 15px;
+	text-align: left	;
+	font-size: 30px;
+}
+
+.profile-right{
+	display: block;
+	float: right;
+	width: 50%;
+	height: 700px;
+	transition: 0.5s;
+}
+
+.profile-right h1{
+	font-family: courier;
+	color: #333;
+	margin: 0;
+	padding: 290px;
+	align-items: center;
+	justify-content: center;
+	font-size: 60px;
+}
+
+#about{
+
+}
+
+#profile{
+
+}
+
+#contact{
+
+}
+
+hr{
+	margin: 20px;
+	margin-top: 20px;
+	border: 2px solid #7DDF96;
+	margin-left: 30px;
+}
+
+.tahun{
+	width: 25%;
+}
+
+.sekolah{
+	width: 25%;
+}
+
+.profile:hover .profile-right{
+	width: 35%;
+	background: white;
+}
+
+.profile:hover .profile-left{
+	width: 65%;
+}
+
+.contact{
+	width: 100%;
+	height: 460px;
+	background-color: white;
+	padding: 10px;
+	transition: 0.7s;
+}
+
+.con-header{
+	text-align: center;
+	width: 100%;
+	height: 100px;
+	margin: 20px;
+}
+
+.con-left{
+	display: inline-block;
+	width: 50%;
+	height: 250px;
+	border-right: 2px solid #68798D;
+	float: left;
+	transition: 0.5s;
+}
+
+.con-right{
+	display: inline-block;
+	width: 50%;
+	height: 300px;
+	float: right;
+	transition: 0.5s;
+}
+
+.sosmed{
+	float: left;
+}
+
+.sosmed img{
+	margin:70px 100px 20px 100px;
+	width: 100px;
+	transition: 0.5s;
+	transform: 0.5s;
+}
+
+.sosmed img:hover{
+	transform: scale(1.5)
+}
+
+.sosmed-isi{
+	float: left;
+}
+
+
+.sosmed-isi h3{
+	text-align: center;
+	font-size: 20px;
+}
+
+.sosmed-isi a{
+	text-decoration: none;
+	color:#303841 ;
+}
+
+#up{
+		position: fixed;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: rgba(192,192,192,0.3);
+	bottom: 40px;
+	right: 50px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	color:#ffffff;
+	visibility: visible;
+}

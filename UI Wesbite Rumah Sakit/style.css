@@ -1,0 +1,303 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  font-family: arial;
+}
+
+header{
+  font-size: 17px;
+  height: 90px;
+  padding-left: 50px;
+  padding-top: 15px;
+}
+
+nav{
+  font-family: arial;
+  text-decoration: none;
+  width: 100%;
+  height: 65px;
+  background-color: #83CAD0;
+  text-align: center;
+  font-size: 20px;
+}
+
+nav a{
+  text-decoration: none;
+  padding: 37px;
+  color: black;
+  padding-top: 14px;
+  text-align: center;
+  width: 15%;
+  font-family: verdana;
+}
+
+nav a:hover{
+  color : grey;
+  border-bottom: solid 2px ;
+}
+
+.header{
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  margin: auto;
+  background-color: #f1f1f1;
+  color: #777;
+}
+
+.main{
+  height: 450px;
+  width: 100%;
+  background-color: #00B3C0;
+  text-align: center;
+}
+
+.main button{
+  color: white;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  margin :auto;
+  padding: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border: solid 1px;
+  border-radius: 10px;
+  transition: 0.3s;
+  letter-spacing: 10px;
+}
+.main button:hover{
+  color: black;
+  background-color: white;
+  border: none;
+
+}
+
+.photo{
+  width: 100%;
+  height: 700px;
+}
+
+.row{
+  content:"";
+  display: table;
+  clear: both;
+  height: 410px;
+  width: 100%;
+}
+
+#show{
+  display: none;
+}
+
+#show1{
+  display: none;
+}
+
+.kiri{
+  float: left;
+  width: 40%;
+  height: 400px;
+  background-color: #f1f1f1;
+}
+
+.card{
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.kanan{
+  float: right;
+  width: 55%;
+  height: 400px;
+  background-color: white;
+}
+
+.kiri1{
+  float: right;
+  width: 50%;
+  height: 400px;
+  background-color: #f1f1f1;
+}
+
+.card{
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.kanan1{
+  float: left;
+  width: 45%;
+  height: 400px;
+  background-color: white;
+}
+
+input{
+  border: none;
+  border-bottom: solid 1px;
+}
+
+input:active{
+  border: none;
+  border-bottom: solid 1px;
+
+}
+
+.footer{
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  text-align: center;
+}
+
+.footer i{
+  transition: transform 0.2s;
+}
+
+.footer i:hover{
+  transform: scale(1.7);
+}
+
+.button {
+  padding-left: 20px;
+  border-radius: 4px;
+  background-color: #83CAD0;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.midnav{
+  text-align: center;
+  width: 100%;
+  height: 100px;
+
+}
+
+.midnav a{
+  font-size: 21px;
+  text-align: center;
+  display: block;
+  float: left;
+  padding: 50px;
+  text-decoration: none;
+  width: 50%;
+  transition: 0.4s;
+  background-color: #f1f1f1;
+}
+
+#lihat2{
+  display: none;
+}
+
+.midnav a:hover{
+  background-color: white;
+}
+
+#color{
+ background-color: #83CAD0;
+}
+
+#color:hover{
+ background-color: white;
+}
+
+#color2{
+ background-color: #83CAD0;
+}
+
+#color2:hover{
+ background-color: white;
+}
+
+.antri{
+  display: table;
+  width: 100%;
+  height: 400px;
+  clear: both;
+}
+
+.card1{
+  padding: 20px;
+  margin-top: 20px;
+  width: 30%;
+}
+
+
+.kanan3{
+  float: right;
+  width: 50%;
+  height: 400px;
+  background-color: white;
+  cursor: pointer;
+}
+.kiri3{
+  float: left;
+  width: 50%;
+  height: 400px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.kiri3 : hover{
+  background-color: white;
+}
+
+#lihat{
+  display: none;
+}
+
+#color{
+}
+
+table a{
+  padding: 32px;
+  line-height: 80px;
+  padding-top: 10px;
+  background-color: #83CAD0;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: verdana;
+}
+
+table a:hover{
+  background-color: #64acb3;
+  transition: 0.4s;
+}

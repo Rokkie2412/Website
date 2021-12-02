@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>About me</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="asd.jpg">
+  </head>
+  <body>
+    <header id='header'>
+      <h1 class="web">IndoCode.ID</h1>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <div class="drop">
+
+      <ul>
+        <li><a href="me.html">About Me</a></li>
+        <li><a href="masuk.html">Subscribe</a></li>
+        <li class="dropdown"><a href="#">Admin ⬇️</a>
+          <ul class="isi-dropdown">
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://api.whatsapp.com/send">whatsapp</a></li>
+          </ul>
+            </li>
+          <li class="dropdown"> <a href="list.html">Content ⬇️</a>
+            <ul class="isi-dropdown">
+              <li><a href="halaman1.html">Membuat Sticker Facebook</a></li>
+              <li><a href="halaman2.html">Animasi Js Sederhana</a></li>
+              <li><a href="halaman3.html">Animasi dengan transisi sendiri</a></li>
+            </ul> </li>
+
+      </ul>
+
+    </div>
+    </header>
+
+    <img style="padding-top: 150px;" src="ab.png" alt="" class="center" height="500px">
+    <div class="isi">
+      <h3>About Me</h3>
+      <p style="color: grey">Siapakah aku?</p>
+      <br>
+      <p>Perkenalkan nama saya Ervan Jovian Jurusan IT Binus Bandung tingkat 1, jika kalian binggung Binus bandung itu dimana dan seperti apa bisa lihat di bawah ini:</p>
+      <img width="600px"src="binus.jpg" alt="">
+      <p>Foto diatas merupakan Binus Bandung dimana tempat saya kuliah dan belajar mengenai tentang IT lainnya</p>
+      <p>Saya memiliki cita cita untuk menjadi web developer handal, saya juga berharap memiliki website besar dan membangun
+      start-up saya disana</p>
+      <h2>Jenjang Akademik saya :</h2>
+      <ol style="padding-left: 20px">
+        <li style="padding-left: 5px">2007-2013 : SD Yos Sudarso Bandung</li>
+        <li style="padding-left: 5px">2013-2016 : SMP Yos Sudarso Bandung</li>
+        <li style="padding-left: 5px">2016-2019 : SMA Kalam Kudus Bandung</li>
+        <li style="padding-left: 5px">2019- present : STTK Binus Bandung</li>
+      </ol>
+      <p>Selai itu juga saya sering aktif dalam olahraga basket, selain harus belajar ngoding saya juga sering sekali
+      merasa tertantang untuk belajar basket, ya sekalian untuk olah raga gitu sih.... walaupun saya hanya bermain dengan teman teman saya.</p>
+
+
+    </div>
+
+    <script type="text/javascript">
+    function scroll(){
+      var top = document.getElementById('header');
+      var ypos = window.pageYOffset;
+      if(ypos > 187){
+        top.style.opacity = "0";
+      }
+      else if(ypos > 117){
+        top.style.opacity = "0.3";
+      }
+      else {
+        top.style.opacity = "1";
+      }
+    }
+      window.addEventListener("scroll",scroll)
+    </script>
+    <script type="text/javascript">
+    var textWrapper = document.querySelector('.web');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({loop: true})
+      .add({
+        targets: '.web .letter',
+        scale: [4,1],
+        opacity: [0,1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 950,
+        delay: (el, i) => 70*i
+      }).add({
+        targets: '.web',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+
+    </script>
+<br>
+<div class="footer">
+  <div class="botnav">
+    <p style="font-family: sans-serif; size: 10px; color: white">Share On : </p>
+    <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x" style="color: white;padding-right: 10px"></i></a>
+    <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x" style="color: white"></i></a>
+    <a href="https://api.whatsapp.com/send"><i class="fa fa-whatsapp fa-2x" style="padding-left: 9px"></i></a>
+    <br><br>
+    <div class="asik"></div>
+    <a href="mailto:rokkie2412@gmail.com? subject=subject text">Hubungi Kami   |</a>
+      <a href="masuk.html" style="padding-left: -10px">Berlangganan Info Dari Kami |</a>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>

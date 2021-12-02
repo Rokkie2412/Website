@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Belajar Animasi JS</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="asd.jpg">
+    <style media="screen">
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+  margin : auto;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+    </style>
+  </head>
+  <body>
+    <header id='header'>
+      <h1 class="web">IndoCode.ID</h1>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <div class="drop">
+
+        <ul>
+          <li><a href="me.html">About Me</a></li>
+          <li><a href="masuk.html">Subscribe</a></li>
+          <li class="dropdown"><a href="#">Admin ⬇️</a>
+            <ul class="isi-dropdown">
+              <li><a href="https://www.facebook.com/">Facebook</a></li>
+              <li><a href="https://www.instagram.com/">Instagram</a></li>
+              <li><a href="https://api.whatsapp.com/send">whatsapp</a></li>
+            </ul>
+              </li>
+            <li class="dropdown"> <a href="list.html">Content ⬇️</a>
+              <ul class="isi-dropdown">
+                <li><a href="halaman1.html">Membuat Sticker Facebook</a></li>
+                <li><a href="halaman2.html">Animasi Js Sederhana</a></li>
+                <li><a href="halaman3.html">Animasi dengan transisi sendiri</a></li>
+              </ul> </li>
+
+        </ul>
+
+    </div>
+    </header>
+
+    <img style="padding-top: 150px;" src="asd.jpg" alt="" class="center">
+  <div class="main">
+
+
+    <div class="isi">
+      <h3>Javascript Animation Tutorial...</h3>
+      <p style="color: grey">Apa itu Java script?</p>
+      <br>
+      <p>JavaScript adalah salah satu bahasa pemrograman yang paling banyak digunakan dalam kurun waktu dua puluh tahun ini. Bahkan JavaScript juga dikenal sebagai salah satu dari tiga bahasa pemrograman utama bagi web developer.</p>
+      <br>
+    <h2>Kali ini kita akan belajar membuat animasi sederhana JavaScript</h2>
+    <br>
+    <h3 style="font-family: sans-serif">Mari langsung masuk ke dalam codenya</h3>
+    <br>
+    <p>Untuk kode htmlnya ada di bawah ini :</p>
+    <img width="600px" src="html0.png" alt="">
+    <br>
+    <p>untuk kode CSS kalian bisa lihat di bawah ini :</p>
+    <img width="600px" src="css0.png" alt="">
+    <br>
+    <p>Untuk kode JavaScriptnya bisa kalian lihat dibawah ini:</p>
+    <img width="600px" src="js0.png" alt="">
+    <br>
+    <p>Nah itu temen temen kodenya silahkan kalian coba sendiri untuk memastikan kodenya berjalan atau tidak</p>
+    <p>Jika kode kalian jalan akan menghasilkan seperti di bawah ini :</p>
+    <br>
+    <p align=center><button onclick="myMove()">Click Me</button></p>
+    <br>
+
+<div id ="container">
+  <div id ="animate"></div>
+</div>
+
+
+<script>
+function myMove() {
+  var elem = document.getElementById("animate");
+  var pos = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++;
+      elem.style.top = pos + "px";
+      elem.style.left = pos + "px";
+    }
+  }
+}
+</script>
+<script type="text/javascript">
+var textWrapper = document.querySelector('.web');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.web .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '.web',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+</script>
+<br>
+<p>Cara kerja :Animasi JavaScript dilakukan dengan memprogram perubahan bertahap dalam gaya elemen.
+
+Perubahan itu disebut dengan timer. Ketika interval timer kecil, animasi terlihat terus menerus. Selain itu juga
+dalam CSS nya diharuskan untuk position :relative agar posisi kotak dapat bergrak tidak berdiam di tempat seperti absolute.</p>
+
+
+
+
+    </div>
+
+    <script type="text/javascript">
+    function scroll(){
+      var top = document.getElementById('header');
+      var ypos = window.pageYOffset;
+      if(ypos > 187){
+        top.style.opacity = "0";
+      }
+      else{
+        top.style.opacity = "1";
+      }
+    }
+      window.addEventListener("scroll",scroll)
+    </script>
+<br>
+<div class="footer">
+  <div class="botnav">
+    <p style="font-family: sans-serif; size: 10px; color: white">Share On : </p>
+    <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x" style="color: white;padding-right: 10px"></i></a>
+    <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x" style="color: white"></i></a>
+    <a href="https://api.whatsapp.com/send"><i class="fa fa-whatsapp fa-2x" style="padding-left: 9px"></i></a>
+    <br><br>
+    <div class="asik"></div>
+    <a href="mailto:rokkie2412@gmail.com? subject=subject text">Hubungi Kami   |</a>
+      <a href="masuk.html" style="padding-left: -10px">Berlangganan Info Dari Kami |</a>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
